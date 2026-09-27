@@ -50,4 +50,5 @@ Tourists, business travellers, couples and families looking for comfortable city
 - Ayazhan Nurtaza — Booking page
 
 ## Deployment
+https://github.com/meizaitu/AuroraHotel
 
