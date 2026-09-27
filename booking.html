@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Book a room and contact Aurora Hotel.">
+    <title>Aurora Hotel | Booking & Contact</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container nav-wrapper">
+            <a class="logo" href="index.html">Aurora Hotel</a>
+
+            <nav class="main-nav" aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a class="nav-link" href="index.html">Home</a></li>
+                    <li><a class="nav-link" href="rooms.html">Rooms</a></li>
+                    <li><a class="nav-link" href="about.html">About</a></li>
+                    <li><a class="nav-link active" href="booking.html">Booking</a></li>
+                </ul>
+            </nav>
+
+            <a class="btn btn-small" href="#booking-form">Book Now</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <p class="eyebrow">Booking & Contact</p>
+                <h1>Plan your stay at Aurora Hotel</h1>
+                <p>
+                    Send a booking request, review check-in information and find answers to common questions.
+                </p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container booking-layout">
+                <section class="booking-panel" id="booking-form">
+                    <p class="eyebrow">Reservation request</p>
+                    <h2>Book a room</h2>
+
+                    <form class="booking-form" action="#" method="post">
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="fullname">Full name</label>
+                                <input type="text" id="fullname" name="fullname" placeholder="Your full name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="name@example.com" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Phone number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+7 700 000 00 00">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="room">Room type</label>
+                                <select id="room" name="room" required>
+                                    <option value="">Choose a room</option>
+                                    <option>Standard Room</option>
+                                    <option>Twin Room</option>
+                                    <option>Deluxe Room</option>
+                                    <option>Family Room</option>
+                                    <option>Junior Suite</option>
+                                    <option>Presidential Suite</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="checkin">Check-in</label>
+                                <input type="date" id="checkin" name="checkin" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="checkout">Check-out</label>
+                                <input type="date" id="checkout" name="checkout" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="guests">Guests</label>
+                                <input type="number" id="guests" name="guests" min="1" max="6" value="1" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="purpose">Travel purpose</label>
+                                <select id="purpose" name="purpose">
+                                    <option>Leisure</option>
+                                    <option>Business</option>
+                                    <option>Family trip</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Special request</label>
+                            <textarea id="message" name="message" rows="5"
+                                      placeholder="Tell us about any special request"></textarea>
+                        </div>
+
+                        <div class="form-actions">
+                            <button class="btn" type="submit">Send Booking Request</button>
+                            <button class="btn btn-outline-dark" type="reset">Clear Form</button>
+                        </div>
+                    </form>
+                </section>
+
+                <aside class="booking-info">
+                    <h2>Stay information</h2>
+
+                    <div class="info-block">
+                        <h3>Check-in</h3>
+                        <p>From 14:00</p>
+                    </div>
+
+                    <div class="info-block">
+                        <h3>Check-out</h3>
+                        <p>Until 12:00</p>
+                    </div>
+
+                    <div class="info-block">
+                        <h3>Reception</h3>
+                        <p>Open 24 hours a day</p>
+                    </div>
+
+                    <div class="info-block">
+                        <h3>Contact</h3>
+                        <p>+7 707 576 2007<br>meizamkhan@list.ru</p>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <section class="section section-alt">
+            <div class="container contact-grid">
+                <article>
+                    <p class="eyebrow">Contact us</p>
+                    <h2>Need help before arrival?</h2>
+                    <p>
+                        Contact our reception team if you need additional information about rooms,
+                        arrival time, services or accessibility.
+                    </p>
+                </article>
+
+                <article class="contact-card">
+                    <h3>Hotel address</h3>
+                    <address>
+                        Kosshy Qalasy
+                    </address>
+                    <p><strong>Phone:</strong> +7 707 576 2007</p>
+                    <p><strong>Email:</strong> meizamkhan@list.ru</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">FAQ</p>
+                    <h2>Frequently asked questions</h2>
+                </div>
+
+                <div class="faq-grid">
+                    <details>
+                        <summary>Is breakfast included?</summary>
+                        <p>Breakfast availability depends on the selected room package.</p>
+                    </details>
+
+                    <details>
+                        <summary>Can I request early check-in?</summary>
+                        <p>Yes. Early check-in is subject to room availability.</p>
+                    </details>
+
+                    <details>
+                        <summary>Does the hotel have Wi-Fi?</summary>
+                        <p>Yes. High-speed Wi-Fi is available in guest rooms and common areas.</p>
+                    </details>
+
+                    <details>
+                        <summary>Can families stay at the hotel?</summary>
+                        <p>Yes. Family rooms are available for guests who need additional space.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <h2 class="footer-logo">Aurora Hotel</h2>
+                <p>Modern accommodation designed for comfortable city stays.</p>
+            </div>
+            <div>
+                <h3>Pages</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="rooms.html">Rooms</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="booking.html">Booking</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Contact</h3>
+                <address>
+                    Kosshy Qalasy<br>
+                    +7 707 576 2007
+                </address>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Aurora Hotel. Student project.</p>
+        </div>
+    </footer>
+</body>
+</html>

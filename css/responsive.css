@@ -1,0 +1,139 @@
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 960px) {
+    .nav-wrapper {
+        flex-wrap: wrap;
+        padding: 0.8rem 0;
+    }
+
+    .main-nav {
+        order: 3;
+        width: 100%;
+    }
+
+    .nav-list {
+        justify-content: flex-start;
+    }
+
+    .hero {
+        min-height: auto;
+        padding: 5rem 0;
+    }
+
+    .hero-content,
+    .story-grid,
+    .booking-layout,
+    .team-section,
+    .testimonial-layout,
+    .amenities-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .room-preview-grid,
+    .rooms-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .values-grid,
+    .stats-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .amenities-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .booking-info {
+        position: static;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 640px) {
+    .section {
+        padding: 3.5rem 0;
+    }
+
+    .nav-wrapper {
+        align-items: flex-start;
+    }
+
+    .site-header .btn-small {
+        display: none;
+    }
+
+    .main-nav {
+        width: 100%;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.25rem;
+    }
+
+    .nav-link {
+        display: block;
+        width: 100%;
+    }
+
+    .hero {
+        padding: 4rem 0;
+    }
+
+    .hero-actions,
+    .cta-flex,
+    .form-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .hero-actions .btn,
+    .cta-flex .btn,
+    .form-actions .btn {
+        width: 100%;
+    }
+
+    .room-preview-grid,
+    .rooms-grid,
+    .values-grid,
+    .stats-grid,
+    .facility-layout,
+    .form-grid,
+    .contact-grid,
+    .faq-grid,
+    .footer-grid,
+    .amenities-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .facility-card.large {
+        grid-row: auto;
+        min-height: 300px;
+    }
+
+    .room-card img {
+        height: 220px;
+    }
+
+    .story-image img {
+        min-height: 300px;
+    }
+
+    .page-hero {
+        padding: 4rem 0 3rem;
+    }
+
+    .page-hero .container {
+        margin-inline: auto;
+    }
+}
